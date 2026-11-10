@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DX Hidráulica: serviços de direção hidráulica, elétrica, freios e suspensão em Salvador.">
+  <title>DX Hidráulica | Seu carro em boas mãos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container navegacao">
+      <a href="#inicio" class="logo">
+      <img src="logo-dx.jpg" alt="DX Hidráulica - Direção, Freios e Suspensão">
+      </a>
+      <nav aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-conteudo">
+        <p class="destaque">DIREÇÃO • FREIOS • SUSPENSÃO</p>
+        <h1>Seu carro em <span>boas mãos.</span></h1>
+        <p>
+          Serviços especializados em direção hidráulica e elétrica,
+          bombas hidráulicas e componentes de suspensão em Salvador.
+        </p>
+        <a href="#atendimento" class="botao">
+          Solicitar atendimento
+        </a>
+      </div>
+    </section>
+
+    <section class="secao" id="servicos">
+      <div class="container">
+        <p class="destaque">O QUE FAZEMOS</p>
+        <h2>Nossos serviços</h2>
+        <p class="subtitulo">
+          Conheça os serviços oferecidos pela DX Hidráulica.
+        </p>
+
+        <div class="grade-servicos">
+          <article class="cartao">
+            <div class="icone">🔧</div>
+            <h3>Caixas de direção</h3>
+            <p>Reparo de caixas de direção hidráulica e elétrica.</p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">⚙️</div>
+            <h3>Bombas hidráulicas</h3>
+            <p>Reparo de bombas hidráulicas e eletro-hidráulicas.</p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">🚗</div>
+            <h3>Suspensão</h3>
+            <p>Troca de componentes do sistema de suspensão.</p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">🛠️</div>
+            <h3>Mangueiras hidráulicas</h3>
+            <p>Reparação de mangueiras do sistema hidráulico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-escura" id="atendimento">
+      <div class="container formulario-container">
+        <div>
+          <p class="destaque">FALE CONOSCO</p>
+          <h2>Solicite seu atendimento</h2>
+          <p class="subtitulo">
+            Descreva o problema do seu veículo.
+            Ao continuar, você será direcionado ao WhatsApp
+            para enviar sua solicitação.
+          </p>
+        </div>
+
+        <form id="form-atendimento" class="formulario">
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text"
+                 autocomplete="name" maxlength="100" required>
+
+          <label for="veiculo">Modelo do veículo</label>
+          <input id="veiculo" name="veiculo" type="text"
+                 placeholder="Ex.: Fiat Argo 2020"
+                 maxlength="100" required>
+
+          <label for="problema">Descreva o problema</label>
+          <textarea id="problema" name="problema" rows="5"
+                    maxlength="1000" required></textarea>
+
+          <label for="telefone">Seu WhatsApp</label>
+          <input id="telefone" name="telefone" type="tel"
+                 autocomplete="tel"
+                 placeholder="(71) 99999-9999"
+                 maxlength="20" required>
+
+          <p class="aviso">
+            Os dados preenchidos serão usados para montar a mensagem
+            no WhatsApp. Este site não armazena as informações.
+            Você poderá revisar a mensagem antes de enviá-la.
+          </p>
+
+          <button type="submit" class="botao">
+            Continuar pelo WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="secao" id="contato">
+      <div class="container contato">
+        <p class="destaque">LOCALIZAÇÃO E CONTATO</p>
+        <h2>DX Hidráulica</h2>
+        <p>Rua Édson Saldanha, 961 — Entrada do Bonocô</p>
+        <p>Salvador — Bahia</p>
+        <p>WhatsApp: (71) 99151-5130</p>
+
+        <a class="botao botao-secundario"
+           href="https://wa.me/5571991515130"
+           target="_blank" rel="noopener noreferrer">
+          Conversar pelo WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>© <span id="ano"></span> DX Hidráulica. Seu carro em boas mãos.</p>
+    </div>
+  </footer>
+</body>
+</html>
